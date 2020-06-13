@@ -1,29 +1,15 @@
 import React, { useState, useEffect } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import DiscoverMoviesPage from "./pages/DiscoverMoviesPage/DiscoverMoviesPage";
 import AboutPage from "./pages/AboutPage";
-import Navigation from "./components/Navigation";
+import Navigation from "./pages/Navigation";
 import Axios from "axios";
 
 function App() {
-  const URL = "http://www.omdbapi.com/?s=";//http://www.omdbapi.com/?apikey=4b9ca906&
+  const URL = "http://www.omdbapi.com/?";//http://www.omdbapi.com/?apikey=4b9ca906&
   const [MoviesList, setMoviesList] = useState([]);
-
-  // function getSearchResult(movie) {
-  //   //console.log('the movie is', movie)
-  //   const movieIs = MoviesList.find((m) => {
-  //     return m.Title === movie
-  //   })
-  //   if(movieIs) {
-  //     console.log(movieIs)
-  //   } else {
-  //     console.log('no movie found')
-  //   }
-      
-  // }
 
   const getMoviesList = async () => {
     let moviesList = [];
