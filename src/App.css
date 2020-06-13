@@ -1,6 +1,7 @@
-.App {
-  text-align: center;
-}
+  /* .App {
+    text-align: center;
+  } */
+
 
 a {
   padding: 10px;
@@ -10,6 +11,8 @@ a {
   font-weight: bold;
   box-shadow: inset 0 0 3px;
   border-radius: 3px;
+  background-color: #c9d2e0;
+  text-shadow: 0 0 11px #fff;
 }
 
 a:link, a:visited {
@@ -19,6 +22,33 @@ a:link, a:visited {
 
 a:hover {
   box-shadow: 0 0 3px;
+}
+
+a:active {
+  box-shadow: inset 0 0 7px;
+}
+
+input {
+  line-height: 2em;
+  margin-left: 20px;
+}
+
+.movieBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.movieBox a {
+  background-color: #fff;
+  box-shadow: none;
+  margin-left: -10px;
+  text-align: center;
+  padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.movieBox a:hover {
+  text-decoration: underline; 
 }
 
 .App-logo {

@@ -8,3 +8,15 @@
   padding: 1rem;
   margin: 1rem; 
 }
+
+.movieBox:hover {
+  box-shadow: 0 0 7px;
+}
+
+.toDetails, .toDetails:hover {
+  box-shadow: none;
+}
+
+.toDetails:hover {
+  text-decoration: underline;
+}
