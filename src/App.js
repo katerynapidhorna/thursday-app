@@ -8,7 +8,7 @@ import Navigation from "./pages/Navigation";
 import Axios from "axios";
 
 function App() {
-  const URL = "http://www.omdbapi.com/?";//http://www.omdbapi.com/?apikey=4b9ca906&
+  const URL = "https://www.omdbapi.com/?";//http://www.omdbapi.com/?apikey=4b9ca906&
   const [MoviesList, setMoviesList] = useState([]);
 
   const getMoviesList = async () => {
