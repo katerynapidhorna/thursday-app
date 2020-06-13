@@ -5,7 +5,7 @@ import Axios from 'axios'
 export default function MovieDetails() {
   const[movie, set_movie] = useState({})
   const params = useParams()
-  const url = `http://www.omdbapi.com/?i=${params.imdbRef.replace(/:/g, '')}&apikey=4b9ca906`
+  const url = `https://www.omdbapi.com/?i=${params.imdbRef.replace(/:/g, '')}&apikey=4b9ca906`
  
   console.log(params.imdbRef.replace(/:/g, ''))
 
