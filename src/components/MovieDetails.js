@@ -5,13 +5,14 @@ import Axios from 'axios'
 export default function MovieDetails() {
   const[movie, set_movie] = useState({})
   const params = useParams()
-  const url = `http://www.omdbapi.com/?i=${params.imdbRef.replace(/:/g, '')}&apikey=4b9ca906`
+  const url = `https://www.omdbapi.com/?i=${params.imdbRef.replace(/:/g, '')}&apikey=4b9ca906`
  
   console.log(params.imdbRef.replace(/:/g, ''))
 
   async function getMovie() {
+    console.log(url,'URL')
     const response = await Axios.get(url)
-    console.log(response)
+    console.log('responseresponseresponseresponse',response)
     set_movie(response.data)
   }
   useEffect(()=>{
