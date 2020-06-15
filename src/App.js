@@ -5,16 +5,16 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import DiscoverMoviesPage from "./pages/DiscoverMoviesPage/DiscoverMoviesPage";
 import AboutPage from "./pages/AboutPage";
 import Navigation from "./pages/Navigation";
-import MovieDetails from './components/MovieDetails'
+import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
     <div className="App">
-      <Navigation  />
+      <Navigation />
       <Switch>
-        <Route exact path="/discover" component={DiscoverMoviesPage} />
         <Route path="/about" component={AboutPage} />
-        <Route path="/discover/:imdbRef" component={MovieDetails} />
+        <Route path="/discover/:searchtext?" component={DiscoverMoviesPage} />
+        <Route path="/movie/:imdbRef" component={MovieDetails} />
         <Route exact path="/" component={HomePage} />
       </Switch>
     </div>
